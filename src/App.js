@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
 import { Routes, Route } from "react-router-dom";
 import Create from "./components/Create";
@@ -20,16 +21,16 @@ function App() {
         <h2>Que c'est beau de faire la programmation!</h2>
         <h2>It's nice to do the programming!</h2>
       </header>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="users/read" element={<Read />} />
-        <Route path="/users/:id" element={<Details />} />
-        <Route path="/create" element={<Create />} />
-        <Route path="/update" element={<Update />} />
-        <Route path="users/list" element={<UserList />} />
-      </Routes>
-
+      <BrowserRouter basename="/crud-with-mockapi">
+        <Routes basename="/crud-react">
+          <Route path="/" element={<Home />} />
+          <Route path="users/read" element={<Read />} />
+          <Route path="/users/:id" element={<Details />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/update" element={<Update />} />
+          <Route path="users/list" element={<UserList />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
