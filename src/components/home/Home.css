@@ -1,0 +1,28 @@
+.home-header{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #6C757D;
+    font-size: 15px;
+    cursor: pointer;
+  }
+.btn-user-list {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #6C757D;
+    font-size: 15px;
+    cursor: pointer;
+   
+  }
+
+  .info-login{
+    display: flex;
+  }
